@@ -1,0 +1,114 @@
+# =========================
+# Root monorepo - Sales
+# =========================
+
+# --- Environment & Secrets (abstract user details) ---
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+*.env
+!.env.example
+backend/.env
+frontend/.env.local
+
+# --- Python / Django (backend/) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+ENV/
+env/
+.env/
+.venv/
+backend/.venv/
+backend/python
+.python-version
+pip-log.txt
+pip-delete-this-directory.txt
+uv.lock
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+*.log
+
+# Django specific
+db.sqlite3
+db.sqlite3-journal
+media/
+mediafiles/
+staticfiles/
+static_root/
+
+# --- Node / Next.js (frontend/) ---
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+frontend/out/
+dist/
+frontend/dist/
+.next/cache/
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
+.next-env.d.ts
+.next/
+next-env.d.ts
+
+# Dependencies locks - keep package-lock.json but ignore other
+# Uncomment if you want to ignore locks:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# --- Data (abstract user data) ---
+backend/data/data.csv
+backend/data/*.csv
+backend/data/*.xlsx
+backend/data/*.json
+data/
+
+# --- OS generated ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# --- IDE / Editor (abstract user paths) ---
+.idea/
+backend/.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+*.sublime-project
+*.sublime-workspace
+
+# --- Misc ---
+*.bak
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+.eslintcache
+.prettiercache

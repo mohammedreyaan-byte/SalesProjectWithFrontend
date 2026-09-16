@@ -1,0 +1,19 @@
+[project]
+name = "finalproject"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Reyaan", email = "mohammed.reyaan@greenmenconsulting.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django>=6.1.1",
+    "djangorestframework>=3.18.1",
+    "pandas>=3.0.5",
+    "psycopg[binary]>=3.3.5",
+    "python-dotenv>=1.2.3",
+]
+
+[tools]
+package=true

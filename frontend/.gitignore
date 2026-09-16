@@ -1,0 +1,35 @@
+# Env - abstracts user API URLs
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# Dependencies
+node_modules/
+# Keep lockfile for reproducible installs - uncomment to ignore:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Next.js
+.next/
+out/
+dist/
+.next/cache/
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Misc
+.cache/
+.parcel-cache/
+.eslintcache
+*.log
+coverage/
