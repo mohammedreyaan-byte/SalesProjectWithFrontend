@@ -2,7 +2,7 @@
 import os
 import boto3
 
-def upload_csv_to_s3(csv_buffer):
+def  upload_csv_to_s3(csv_buffer):
     try:
         bucket_name = os.getenv("AWS_S3_BUCKET_NAME", "").strip()
         if not bucket_name:
@@ -25,4 +25,4 @@ def upload_csv_to_s3(csv_buffer):
         print("[S3 SUCCESS] Updated data/data.csv in AWS S3")
     except Exception as e:
         # LOG THE ERROR BUT DO NOT CRASH THE DJANGO REQUEST
-        print(f"[S3 ERROR] Could not sync to S3: {e}")
+        print(f"[S3 ERROR] Could not sync to S3: {e}")/
